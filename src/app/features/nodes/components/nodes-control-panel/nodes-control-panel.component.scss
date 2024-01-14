@@ -1,0 +1,17 @@
+fieldset {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+
+  span {
+    max-width: 10.625rem;
+    display: flex;
+    flex-direction: column;
+
+    .error {
+      font-size: .7rem;
+      color: red;
+      position: absolute;
+    }
+  }
+}

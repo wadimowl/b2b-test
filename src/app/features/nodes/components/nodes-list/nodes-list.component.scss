@@ -1,0 +1,27 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  letter-spacing: 2px;
+}
+
+td {
+  letter-spacing: 1px;
+}
+
+tbody {
+  tr {
+    border: 1px solid black;
+    margin: 1rem;
+  }
+
+  td {
+    text-align: center;
+    &[app-node-item] {
+      padding: 1rem;
+    }
+  }
+}
+

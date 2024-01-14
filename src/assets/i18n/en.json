@@ -1,0 +1,23 @@
+{
+  "nodes": {
+    "control-panel": {
+      "title": "Control panel",
+      "timer": "Timer, ms",
+      "size": "Array size",
+      "additional-ids": "Additional array ids",
+      "errors": {
+        "required": "Field is required",
+        "numbersOnly": "Only numbers allowed",
+        "numbersOnlyAndComma": "Only number or numbers divided by comma are allowed",
+        "hasDuplicate": "Same numbers are not allowed"
+      }
+    },
+    "table": {
+      "id": "id",
+      "int": "int",
+      "float": "float",
+      "color": "color",
+      "child": "child"
+    }
+  }
+}

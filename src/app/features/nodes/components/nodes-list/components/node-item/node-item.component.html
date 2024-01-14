@@ -1,0 +1,10 @@
+<table *transloco="let t; read: 'nodes.table'">
+  <tr>
+    <th>{{ t('id') }}</th>
+    <th>{{ t('color') }}</th>
+  </tr>
+  <tr>
+    <td>{{ node.id }}</td>
+    <td><span [style.background-color]="node.color">{{ node.color }}</span></td>
+  </tr>
+</table>

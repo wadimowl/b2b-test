@@ -1,0 +1,2 @@
+<app-nodes-control-panel (paramsChange)="controlParamsChanged($event)"></app-nodes-control-panel>
+<app-nodes-list *ngIf="data$ | async as data" [data]="data"></app-nodes-list>

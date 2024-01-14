@@ -1,0 +1,31 @@
+<form [formGroup]="form">
+  <fieldset *transloco="let t; read: 'nodes.control-panel'">
+    <span>
+      <label for="timer">{{ t('timer') }}</label>
+      <input id="timer" type="text" formControlName="frequency">
+      <div>
+        <span *ngIf="form.controls.frequency.hasError('required')" class="error">{{ t('errors.required') }}</span>
+        <span *ngIf="form.controls.frequency.hasError('pattern')" class="error">{{ t('errors.numbersOnly') }}</span>
+      </div>
+    </span>
+
+    <span>
+      <label for="size">{{ t('size') }}</label>
+      <input id="size" type="text" formControlName="amount">
+      <div>
+        <span *ngIf="form.controls.amount.hasError('required')" class="error">{{ t('errors.required') }}</span>
+        <span *ngIf="form.controls.amount.hasError('pattern')" class="error">{{ t('errors.numbersOnly') }}</span>
+      </div>
+    </span>
+
+    <span>
+      <label for="additional">{{ t('additional-ids') }}</label>
+      <input id="additional" type="text" formControlName="ids">
+      <div>
+        <span *ngIf="form.controls.ids.hasError('pattern')" class="error">{{ t('errors.numbersOnlyAndComma') }}</span>
+        <span *ngIf="form.controls.ids.hasError('hasDuplicate')" class="error">{{ t('errors.hasDuplicate') }}</span>
+      </div>
+
+    </span>
+  </fieldset>
+</form>

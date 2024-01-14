@@ -1,0 +1,20 @@
+<table *transloco="let t; read: 'nodes.table'">
+  <thead>
+  <tr>
+    <th>{{ t('id') }}</th>
+    <th>{{ t('int') }}</th>
+    <th>{{ t('float') }}</th>
+    <th>{{ t('color') }}</th>
+    <th>{{ t('child') }}</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let node of data; trackBy: trackById">
+      <td>{{ node.id }}</td>
+      <td>{{ node.int }}</td>
+      <td>{{ node.float }}</td>
+      <td><span [style.background-color]="node.color">{{ node.color }}</span></td>
+      <td app-node-item [node]="node.child"></td>
+    </tr>
+  </tbody>
+</table>
