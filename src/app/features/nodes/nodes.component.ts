@@ -1,12 +1,12 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import {
   FakeSocketListenerService
-} from '../../services/fake-socket/service/fake-socket-listener/fake-socket-listener.service';
+} from '../../services/fake-socket/services/fake-socket-listener/fake-socket-listener.service';
 import { BehaviorSubject, combineLatest, map, Observable } from 'rxjs';
 import { ColorNode } from '../../services/fake-socket/types/color-node';
 import {
   FakeSocketRequesterFacade
-} from '../../services/fake-socket/service/fake-socket-requester/fake-socket-requester-facade';
+} from '../../services/fake-socket/services/fake-socket-requester/fake-socket-requester-facade';
 import { NodeControlPanelEvent } from './components/nodes-control-panel/types/node-control-panel-event';
 import { ProtoColorNodeWithData } from '../../../protobuffs';
 

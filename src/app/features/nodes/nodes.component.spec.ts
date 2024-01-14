@@ -5,10 +5,10 @@ import { ChangeDetectionStrategy } from '@angular/core';
 import { NodesModule } from './nodes.module';
 import {
   FakeSocketListenerService
-} from '../../services/fake-socket/service/fake-socket-listener/fake-socket-listener.service';
+} from '../../services/fake-socket/services/fake-socket-listener/fake-socket-listener.service';
 import {
   FakeSocketRequesterFacade
-} from '../../services/fake-socket/service/fake-socket-requester/fake-socket-requester-facade';
+} from '../../services/fake-socket/services/fake-socket-requester/fake-socket-requester-facade';
 import { of } from 'rxjs';
 import { ProtoColorNodeWithData } from '../../../protobuffs';
 
